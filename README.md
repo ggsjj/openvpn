@@ -1,6 +1,6 @@
 # 中文
 ```bash
-wget https://raw.githubusercontent.com/ggsjj/openvpn-install/master/openvpn-install.sh
+wget https://raw.githubusercontent.com/ggsjj/openvpn/master/openvpn-install.sh
 chmod +x openvpn-install.sh
 ```
 ```sh
