@@ -1,6 +1,15 @@
-# openvpn-install
+# 中文
+```bash
+wget https://raw.githubusercontent.com/ggsjj/openvpn-install/master/openvpn-install.sh
+chmod +x openvpn-install.sh
+```
+```sh
+./openvpn-install.sh
+```
 
-[![GitLab CI](https://gitlab.com/angristan/openvpn-install/badges/master/pipeline.svg)](https://gitlab.com/angristan/openvpn-install/pipelines)
+
+
+# openvpn-install
 
 OpenVPN installer for Debian, Ubuntu, Fedora, CentOS and Arch Linux.
 
