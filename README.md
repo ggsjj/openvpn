@@ -7,6 +7,10 @@ chmod +x openvpn-install.sh
 ./openvpn-install.sh
 ```
 
+如果连接上不能上网 那就
+iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -j MASQUERADE   #10.8.0.0/24你设的局域网IP
+
+不能连接关闭防火墙
 
 
 # openvpn-install
