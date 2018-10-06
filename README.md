@@ -12,6 +12,15 @@ iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -j MASQUERADE   #10.8.0.0/24你设
 
 不能连接关闭防火墙
 
+如果连不上或连是上不能上网试试换较底的内核
+
+Debian 8 可用内核
+
+linux-image-3.16.0-4-amd64_3.16.43-2+deb8u5_amd64.deb
+
+Ubuntu 16 可用内核
+
+linux-image-4.4.0-47-generic
 
 
 
