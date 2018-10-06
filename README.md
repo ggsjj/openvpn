@@ -24,7 +24,7 @@ script-security 3
  
  auth-user-pass-verify /etc/openvpn/checkpsw.sh via-env 
 
-不请求客户的CA证书，使用User/Pass验证，如果同时启用证书和密码认证，注释掉该行
+不请求客户的CA证书，使用User/Pass验证，如果同时启用证书和密码认证，注释掉该行<本脚本 可加密码客户端所以这个功能无用>
 
 client-cert-not-required 
 
