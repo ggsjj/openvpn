@@ -17,18 +17,28 @@ iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -j MASQUERADE   #10.8.0.0/24你设
 
 
 只用密码验证加 服务端加 checkpsw.sh
+
 script-security 3 
-###指定只用的认证脚本
-auth-user-pass-verify /etc/openvpn/checkpsw.sh via-env 
-###不请求客户的CA证书，使用User/Pass验证，如果同时启用证书和密码认证，注释掉该行
+
+ 指定只用的认证脚本
+ 
+ auth-user-pass-verify /etc/openvpn/checkpsw.sh via-env 
+
+不请求客户的CA证书，使用User/Pass验证，如果同时启用证书和密码认证，注释掉该行
+
 client-cert-not-required 
-### 使用客户提供的UserName作为Common Name
+
+使用客户提供的UserName作为Common Name
+
 username-as-common-name
 
+可以让客户端之间相互访问直接通过openvpn程序转发，根据需要设置
 
-# 可以让客户端之间相互访问直接通过openvpn程序转发，根据需要设置
 client-to-client
-# 如果客户端都使用相同的证书和密钥连接VPN，一定要打开这个选项，否则每个证书只允许一个人连接VPN
+
+
+如果客户端都使用相同的证书和密钥连接VPN，一定要打开这个选项，否则每个证书只允许一个人连接VPN
+
 duplicate-cn
 
 
