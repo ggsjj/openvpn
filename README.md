@@ -64,15 +64,9 @@ This script will let you setup your own secure VPN server in just a few seconds.
 First, get the script and make it executable :
 
 ```bash
-wget https://raw.githubusercontent.com/Angristan/openvpn-install/master/openvpn-install.sh
-chmod +x openvpn-install.sh
+wget https://raw.githubusercontent.com/Angristan/openvpn-install/master/openvpn-install.sh && chmod +x openvpn-install.sh && ./openvpn-install.sh
 ```
 
-Then run it :
-
-```sh
-./openvpn-install.sh
-```
 
 You need to run the script as root and have the TUN module enabled.
 
