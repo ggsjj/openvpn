@@ -23,6 +23,24 @@ Ubuntu 16 可用内核
 linux-image-4.4.0-47-generic
 
 
+# Debian 8 先安装防火墙
+
+apt-get install iptables-persistent
+
+如果此时你的iptables规则已设置好，请选Yes，反之选No，然后回车
+
+如果此时你的ip6tables规则已设置好，请选Yes，反之选No，然后回车。
+
+对IPv4，运行命令：
+
+iptables-save > /etc/iptables/rules.v4
+
+对IPv6，运行命令：
+
+ip6tables-save > /etc/iptables/rules.v6
+
+即可保存当前iptables规则，重启后也不会失效。
+
 
 
 只用密码验证加 服务端加 checkpsw.sh
